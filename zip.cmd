@@ -1,0 +1,1 @@
+wsl zip -0 -rDX "Assessment overview.h5p" content H5P.MUAssessmentOverview h5p.json

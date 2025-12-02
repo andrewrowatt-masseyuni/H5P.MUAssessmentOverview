@@ -1,0 +1,59 @@
+[ 
+  {
+  "name": "assessments",
+  "type": "list",
+  "widgets": [
+      {
+        "name": "VerticalTabs",
+        "label": "Default"
+      }
+    ],
+  "label": "Assessments",
+  "entity": "assessment",
+  "min": 1,
+  "max": 20,
+  "field": {
+	  "name": "assessment",
+	  "type": "group",
+	  "label": "Assessment",
+	  "fields": [
+		{
+		  "name": "assessment",
+		  "type": "text",
+		  "label": "Assessment",
+		  "default": "",
+		  "description": "Name of assessment"
+		},
+		{
+		  "name": "learningoutcomes",
+		  "type": "text",
+		  "label": "Learning Outcomes",
+		  "default": "",
+		  "description": "Learning Outcomes (numbers only) e.g. 1,2,5"
+		},
+		{
+		  "name": "weighting",
+		  "type": "text",
+		  "label": "Percentage Weighting",
+		  "default": "",
+		  "description": "Percentage Weighting of this assessment."
+		},
+				{
+		  "name": "duedate",
+		  "type": "text","widget": "html",
+		  "label": "Due date",
+		  "default": "",
+		  "description": "Due date(s) for this assessment.",
+		  "enterMode": "p",
+			"tags": [
+				  "strong",
+				  "em",
+				  "u",
+				  "a",
+				  "hr"
+			]
+		}
+	  ]
+	}
+}
+]

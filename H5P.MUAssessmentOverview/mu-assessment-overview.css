@@ -1,0 +1,50 @@
+@import url("//fonts.googleapis.com/css?family=Roboto:500,100,400,300");
+
+.h5p-assessments {
+  width: 100%;
+  font-family: "Roboto",Georgia,"Times New Roman",Times,serif;
+  font-weight: 300;
+  font-size: 18px;
+  color: #565656;
+}
+
+div.h5p-assessments {}
+
+div.h5p-assessments table.assessment-overview {
+	font-size: 100%; /* Override default table font size */
+	border-spacing: 0;
+    border-collapse: collapse;
+}
+
+
+div.h5p-assessments table.assessment-overview td.assessment { width: 40%;}
+div.h5p-assessments table.assessment-overview td.learningoutcomes { width: 12%;}
+div.h5p-assessments table.assessment-overview td.weighting { width: 12%; text-align: right;}
+div.h5p-assessments table.assessment-overview td.duedate { width: 35%;}
+
+div.h5p-assessments table.assessment-overview thead td {
+    vertical-align: bottom;
+    text-align: center;
+}
+
+/* Styling - Based on work by Bruce MacKay CoHSS */
+/* Should set default font to Roboto */
+table[class^=mu-] {
+    font-family: inherit;
+}
+
+/* Table 1*/
+table[class^=mu-table1-] { font-size: 90%; margin-bottom: 1rem; }
+table[class^=mu-table1-] tr { vertical-align: top }
+table[class^=mu-table1-] td, table[class^=mu-table1-] th { padding: 5px; border: 1px solid black; }
+table[class^=mu-table1-] thead td, table[class^=mu-table1-] th { background-color: #f9f4e8; font-weight: 500; } /* mismatch in editor - > tbody > tr > td are not bold due to clunky editor overrides*/
+table[class^=mu-table1-] ul { margin: 0!important; }
+
+table.mu-table1-grey thead td, table.mu-table1-grey th { background-color: #f1f1f1; }
+table.mu-table1-yellow thead td, table.mu-table1-yellow th { background-color: #f9f4e8; }
+
+/* LMS0160 QFE (Global) */
+table[class^=mu-table1-] p {
+    margin: 0;
+}
+/* End Table*/

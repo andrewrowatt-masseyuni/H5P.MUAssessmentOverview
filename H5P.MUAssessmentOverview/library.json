@@ -1,0 +1,28 @@
+{
+  "title": "MU Assessment Overview",
+  "description": "Assessment Overview widget for MU template.",
+  "majorVersion": 1,
+  "minorVersion": 2,
+  "patchVersion": 19,
+  "runnable": 1,
+  "author": "Massey University",
+  "license": "cc-by-sa",
+  "machineName": "H5P.MUAssessmentOverview",
+  "coreApi": {
+    "majorVersion": 1,
+    "minorVersion": 0
+  },
+  "preloadedJs": [
+    { "path": "mu-assessment-overview.js" }
+  ],
+  "preloadedCss": [
+    {"path": "mu-assessment-overview.css"}
+  ],
+  "editorDependencies": [
+    {
+      "machineName": "H5PEditor.VerticalTabs",
+      "majorVersion": 1,
+      "minorVersion": 3
+    }
+  ]
+}
