@@ -19,10 +19,10 @@ H5P.MUAssessmentOverview = (function ($) {
     // container.  Allows for styling later.
     $container.addClass("h5p-assessments");
 
-	var html = '<table class="mu-table1-grey assessment-overview"><thead><tr><td>Assessment</td><td>Learning<br>Outcomes</td><td>Weight</td><td>Due Dates</td></tr></thead><tbody>';
+	var html = '<table><thead><tr><th>Assessment</th><th>Learning<br>Outcomes</th><th>Weight</th><th>Due Dates</th></tr></thead><tbody>';
 	var i = 1;
 	for(assessment of this.options.assessments) {
-		html += `<tr><td class="assessment">${assessment.assessment}</td><td class="learningoutcomes">${assessment.learningoutcomes}</td><td class="weighting">${assessment.weighting}</td><td class="duedate">${assessment.duedate}</td></tr>`;
+		html += `<tr><td class="assessment" data-label="Assessment"><div>${assessment.assessment}</div></td><td class="learningoutcomes" data-label="Learning Outcomes"><div>${assessment.learningoutcomes}</div></td><td class="weighting" data-label="Weight"><div>${assessment.weighting}</div></td><td class="duedate" data-label="Due Dates"><div>${assessment.duedate}</div></td></tr>`;
 		i+=1;
 	}
 	
